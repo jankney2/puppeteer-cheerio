@@ -6,6 +6,7 @@
   "repository": "https://github.com/jankney2/cheerio.git",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "puppeteer": "^2.0.0"
   }

@@ -13,7 +13,8 @@ app.listen(port,async  () => {
         const browser=await puppeteer.launch()
         const page=await browser.newPage()
         await page.goto('https://podium.com')
-        await page.screenshot({path: './screenshots/'});
+        await page.click(document.querySelector('div[class=mobile-ham]'))
+        await page.screenshot({path: './screenshots/example.png'});
         await browser.close()
         console.log('browser shut down')
 
