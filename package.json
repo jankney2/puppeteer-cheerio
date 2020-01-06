@@ -1,0 +1,12 @@
+{
+  "name": "cheerio",
+  "version": "1.0.0",
+  "description": "bot playground",
+  "main": "index.js",
+  "repository": "https://github.com/jankney2/cheerio.git",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "puppeteer": "^2.0.0"
+  }
+}
