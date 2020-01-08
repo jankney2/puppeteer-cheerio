@@ -14,7 +14,7 @@ app.listen(port,async  () => {
         const page=await browser.newPage()
         await page.goto('https://podium.com')
         await page.click(document.querySelector('div[class=mobile-ham]'))
-        await page.screenshot({path: './screenshots/example.png'});
+        await page.screenshot({path: './screenshots/shot.png'});
         await browser.close()
         console.log('browser shut down')
 
