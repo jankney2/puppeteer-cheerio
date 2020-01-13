@@ -70,6 +70,8 @@ app.listen(port, async () => {
     await document.getElementById('export-csv').click()
 
   });
+  await page.waitFor(3000)
+  await page.goto('chrome://downloads', {waitUntil:'networkidle2'})
   // await browser.close();
   console.log("browser shut down");
 });
