@@ -1,12 +1,12 @@
 const express = require("express");
 const app = express();
 require("dotenv").config();
-const port = 3005;
+const {PORT} = process.env;
 
 const puppeteer = require("puppeteer");
 
-app.listen(port, async () => {
-  console.log("server running on", port);
+app.listen(PORT, async () => {
+  console.log("server running on", PORT);
 
   console.log("hit");
   const browser = await puppeteer.launch({
